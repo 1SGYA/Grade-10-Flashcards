@@ -1,0 +1,33 @@
+const subjects = [
+  [
+    { name: "MATHEMATICS", class: "myDiv", url: "https://quizlet.com/user/namnam310/folders/mathematics-10?i=3unlau&x=1xqt" },
+    { name: "SCIENCE", class: "Science", url: "https://quizlet.com/user/namnam310/folders/science-10?i=3unlau&x=1xqt" },
+    { name: "ENGLISH", class: "English", url: "https://quizlet.com/user/namnam310/folders/english-10?i=3unlau&x=1xqt" }
+  ],
+  [
+    { name: "FILIPINO", class: "Filipino", url: "https://quizlet.com/user/namnam310/folders/filipino-10?i=3unlau&x=1xqt" },
+    { name: "ARALING PANLIPUNAN", class: "AP", url: "https://quizlet.com/user/namnam310/folders/araling-panlipunan-10?i=3unlau&x=1xqt" },
+    { name: "GMRC", class: "GMRC", url: "https://quizlet.com/user/namnam310/folders/christian-living-10?i=3unlau&x=1xqt" }
+  ],
+  [
+    { name: "APEH", class: "APEH", url: "https://quizlet.com/user/namnam310/folders/apeh-10?i=3unlau&x=1xqt" },
+    { name: "TLE", class: "TLE", url: "https://quizlet.com/user/namnam310/folders/english-10?i=3unlau&x=1xqt" },
+    { name: "COMPUTER", class: "COMPUTER", url: "https://quizlet.com/user/namnam310/folders/computer-10?i=3unlau&x=1xqt" }
+  ],
+  [
+    { name: "ELECTIVE MATH", class: "ELECMATH", url: "https://quizlet.com/user/namnam310/folders/elective-math?i=3unlau&x=1xqt" },
+    { name: "ELECTIVE ENGLISH", class: "ELECENGLISH", url: "https://quizlet.com/user/namnam310/folders/154507094?i=3unlau&x=1xqt" }
+  ]
+];
+
+const table = document.getElementById('subjectsTable');
+subjects.forEach(row => {
+  const tr = document.createElement('tr');
+  row.forEach(subject => {
+    const th = document.createElement('th');
+    th.className = subject.class;
+    th.innerHTML = `<a href="${subject.url}" target="_blank">${subject.name}</a>`;
+    tr.appendChild(th);
+  });
+  table.appendChild(tr);
+});

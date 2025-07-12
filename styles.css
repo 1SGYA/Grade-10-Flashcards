@@ -1,0 +1,27 @@
+body {
+  background-color: #d2b48c;
+}
+th {
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  border: solid 5px #7b1113;
+}
+.myDiv { border: 5px solid #000080; background-color: #000080; }
+.Science { border: 5px solid #2a8000; background-color: #2a8000; }
+.English { border: 5px solid #b22222; background-color: #b22222; }
+.Filipino { border: 5px solid #321414; background-color: #321414; }
+.AP { border: 5px solid #ff69b4; background-color: #ff69b4; }
+.GMRC { border: 5px solid #ff4500; background-color: #ff4500; }
+.APEH { border: 5px solid #efcc00; background-color: #efcc00; }
+.TLE { border: 5px solid LightGray; background-color: LightGray; }
+.COMPUTER { border: 5px solid #800080; background-color: #800080; }
+.ELECMATH { border: 5px solid #4169e1; background-color: #4169e1; }
+.ELECENGLISH { border: 5px solid #dc143c; background-color: #dc143c; }
+a:link, a:visited, a:hover, a:active {
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  text-align: center;
+}
